@@ -19,9 +19,9 @@ YOLO 检测物块与目标框 → 单目相机 + 平面假设解算 3D 位置 �
 
 ## 🎬 演示
 
-[![点击播放演示视频](media/demo.jpg)](media/demo.mp4)
+![](media/demo.gif)
 
-> 点击上面的封面图即可播放视频，或直接打开 [media/demo.mp4](media/demo.mp4)。
+> 上面是自动循环播放的演示动图；完整视频：[media/demo.mp4](media/demo.mp4)
 > 演示：YOLO 检测 → 单目 3D 定位 → IK 规划 → 抓取放置（SO-101 从臂）
 
 ## 目录结构
@@ -90,6 +90,7 @@ python step7_pick_place.py --robot.type=so101_follower --robot.port=/dev/ttyACM0
 - 项目路径约定：`/home/x/robot_learning/pick_place`（Windows 侧为 `C:\My_shuju\x\pick_place`）
 - 机器人 id：`so101_follower`（校准文件按 id 保存）
 - 详细的环境依赖与版本坑，见 `docs/01-环境搭建.md`
+
 
 
 
