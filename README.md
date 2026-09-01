@@ -1,4 +1,4 @@
-﻿# SO-101 机械臂 · 单目视觉抓取放置（Pick & Place）
+# SO-101 机械臂 · 单目视觉抓取放置（Pick & Place）
 
 基于 **LeRobot** 与 **单目眼在手（eye-in-hand）视觉** 实现的机械臂自主抓取放置项目：
 YOLO 检测物块与目标框 → 单目相机 + 平面假设解算 3D 位置 → IK 运动学规划 → 闭环抓取放置。
@@ -70,6 +70,7 @@ python step7_pick_place.py --robot.type=so101_follower --robot.port=/dev/ttyACM0
 
 | 文档 | 内容 |
 |---|---|
+| [docs/00-零基础教程.md](docs/00-零基础教程.md) | ⭐ 零基础手把手教程（跟着做，从零到抓取放置） |
 | [docs/01-环境搭建.md](docs/01-环境搭建.md) | Ubuntu 虚拟机 + LeRobot 环境配置（含 main 分支 API 差异） |
 | [docs/02-标定流程.md](docs/02-标定流程.md) | 相机内参 / 手眼标定 / 桌面平面（含所有坑） |
 | [docs/03-YOLO数据与训练.md](docs/03-YOLO数据与训练.md) | 数据采集 / 标注 / 训练 / 部署 |
@@ -82,4 +83,5 @@ python step7_pick_place.py --robot.type=so101_follower --robot.port=/dev/ttyACM0
 - 项目路径约定：`/home/x/robot_learning/pick_place`（Windows 侧为 `C:\My_shuju\x\pick_place`）
 - 机器人 id：`so101_follower`（校准文件按 id 保存）
 - 详细的环境依赖与版本坑，见 `docs/01-环境搭建.md`
+
 
