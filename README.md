@@ -17,6 +17,12 @@ YOLO 检测物块与目标框 → 单目相机 + 平面假设解算 3D 位置 �
 - 🔁 **闭环**：抓取前重检测、下降接触停止、放框前重检测框，自动纠偏
 - 🛡️ **安全**：慢速分段、到位等待、结束自动回初始姿态后再断电
 
+## 🎬 演示
+
+<video src="media/demo.mp4" width="720" controls poster="media/demo.jpg"></video>
+
+> 演示：YOLO 检测 → 单目 3D 定位 → IK 规划 → 抓取放置（SO-101 从臂）
+
 ## 目录结构
 
 ```
@@ -83,5 +89,6 @@ python step7_pick_place.py --robot.type=so101_follower --robot.port=/dev/ttyACM0
 - 项目路径约定：`/home/x/robot_learning/pick_place`（Windows 侧为 `C:\My_shuju\x\pick_place`）
 - 机器人 id：`so101_follower`（校准文件按 id 保存）
 - 详细的环境依赖与版本坑，见 `docs/01-环境搭建.md`
+
 
 
