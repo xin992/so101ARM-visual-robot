@@ -1,0 +1,17 @@
+﻿# ---------- Python ----------
+__pycache__/
+*.py[cod]
+*.egg-info/
+.venv/
+venv/
+
+# ---------- 本机数据 / 大文件（不上传） ----------
+datasets/
+debug/
+calib/calib_imgs/
+calib/handeye/
+runs/
+
+# ---------- 系统文件 ----------
+.DS_Store
+Thumbs.db
